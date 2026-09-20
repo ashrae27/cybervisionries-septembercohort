@@ -11,10 +11,10 @@
 ## In My Own Words
 
 **What is the CIA Triad, in your own words?**
-
+Confidently- keep data private, Integrity- only authorized people allow access to the data, availability - only certain people can change the data
 
 **Which cybersecurity career path interests you most right now, and why?**
-
+Pen testing because I am interested the career path by finding vulnerabilies.
 
 **One term I want to remember from this week, and why:**
-
+software because I want to learn about the computers software and how it operates.
