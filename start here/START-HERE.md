@@ -25,8 +25,11 @@ Your introduction belongs in this root `README.md`. The file `week-01/README-wee
 Find `## About Me` near the top, directly below the main title and the **New here?** sentence. Replace only the bracketed instruction paragraph under `## About Me` with at least three sentences:
 
 - Who are you?
+  My name is Ashley Raether
 - Why are you learning cybersecurity?
+  I am learning cybersecurity because I enjoy learning cybersecurity and learn more information about cybersecurity. I want to keep myself safe from bad hackers.
 - What is one learning goal for this course?
+  learning how to defend myself from bad hackers
 
 Keep the `## About Me` heading, main title, **New here?** link, and all other README content. If your copy does not have an **About Me** section yet, add it in that same location, above the paragraph beginning **This repository documents**.
 
