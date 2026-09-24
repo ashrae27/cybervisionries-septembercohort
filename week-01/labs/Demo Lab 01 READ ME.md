@@ -40,8 +40,8 @@
 
 | Element | Visible? |
 |---------|----------|
-| Headings | Yes / No |
-| Numbered steps | Yes / No |
+| Headings | **Yes** / No |
+| Numbered steps | **Yes** / No |
 | Checklist items | Yes / No |
 | Tables | Yes / No |
 | Code blocks | Yes / No |
@@ -76,9 +76,9 @@
 (paste your output here)
 ```
 
-**Demo username shown:** ________________
+**Demo username shown:** arae27
 
-**Timestamp shown:** ________________
+**Timestamp shown:** 3:30pm
 
 ---
 
