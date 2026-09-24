@@ -17,10 +17,10 @@
 
 | Section | Visible? | Notes |
 |---------|----------|-------|
-| Lab progress | *Yes* / No | |
-| Current lab card | *Yes* / No | |
-| Environment or simulator access | *Yes* / No | |
-| Account or profile menu | *Yes* / No | |
+| Lab progress | **Yes** / No | |
+| Current lab card | **Yes** / No | |
+| Environment or simulator access | **Yes** / No | |
+| Account or profile menu | **Yes** / No | |
 
 **Notes / issues encountered:**
 
