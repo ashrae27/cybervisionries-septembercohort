@@ -63,7 +63,7 @@
 ```
 
 **Command completed successfully:**
-- [ ] Yes
+- [x] Yes
 - [ ] No — troubleshooting steps taken:
 
 ---
@@ -85,11 +85,11 @@
 ## Step 5 — Completion
 
 **Completion control found:**
-- [ ] Yes
+- [x] Yes
 - [ ] No — describe what you saw instead:
 
 **Dashboard progress updated after completion:**
-- [ ] Yes
+- [x] Yes
 - [ ] No
 - [ ] Not applicable in this demo environment
 
