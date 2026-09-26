@@ -121,9 +121,9 @@ List five processes running right now. For each, write your best guess at what i
 | launchd | Mac | The very first process Mac starts — manages and launches other background services |
 
 ```
-1. Process name: __________   What I think it does: __________
-2. Process name: __________   What I think it does: __________
-3. Process name: __________   What I think it does: __________
+1. Process name: Antimalware Core Service  What I think it does: Microsoft Antivirus 
+2. Process name: Antimalware service executable   What I think it does: Scans files, downloads, and apps before opening them
+3. Process name: Microsoft Defender  What I think it does: protects devices, network, and cloud from malware, phishing and ransomware.
 4. Process name: __________   What I think it does: __________
 5. Process name: __________   What I think it does: __________
 ```
