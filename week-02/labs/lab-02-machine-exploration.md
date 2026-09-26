@@ -91,7 +91,7 @@ The process list updates constantly and can be hard to read while it's jumping a
 Look at the current CPU usage percentage.
 
 ```
-Current CPU usage: ____%
+Current CPU usage: 14%
 ```
 
 ### Step 5 — Record Memory Usage
@@ -99,7 +99,7 @@ Current CPU usage: ____%
 Find how much RAM is currently in use, out of your total installed RAM (the same total you looked up in Part A).
 
 ```
-RAM in use: ____   out of total: ____
+RAM in use: 15GB  out of total: 15.8GB
 ```
 
 ### Step 6 — List Five Running Processes
