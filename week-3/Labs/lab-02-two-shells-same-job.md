@@ -72,11 +72,12 @@ Use the **Foundry District Storeroom — Bash** box. Every challenge starts from
 
 Command you ran:
 ```
-(paste the command here)
+pwd
 ```
 Output:
 ```
-(paste the output here)
+agent@storeroom-lnx01:/home/agent$ pwd
+/home/agent
 ```
 
 ### Step A2 — Look Around the Directory
@@ -85,11 +86,12 @@ Output:
 
 Command you ran:
 ```
-(paste the command here)
+cat README.txt
 ```
 Output:
 ```
-(paste the output here)
+agent@storeroom-lnx01:/home/agent$ cat README.txt
+Storeroom shared volume, mounted read and write
 ```
 
 ### Step A3 — Move Deeper into the Storeroom
@@ -98,18 +100,20 @@ Output:
 
 Command you ran:
 ```
-(paste the command here)
+cd archive/
+cd incident-42
 ```
 
 **⚠️ Stop and check:** run your location-check command *immediately* after moving, to confirm you arrived safely.
 
 Command you ran:
 ```
-(paste the command here)
+pwd
 ```
 Output:
 ```
-(paste the output here)
+agent@storeroom-lnx01:/home/agent/archive/incident-42$ pwd
+/home/agent/archive/incident-42
 ```
 
 ### Step A4 — Inspect the Incident Log File
@@ -118,11 +122,15 @@ Output:
 
 Command you ran:
 ```
-(paste the command here)
+cat
 ```
 Output:
 ```
-(paste the output here)
+agent@storeroom-lnx01:/home/agent/archive/incident-42$ cat access-log.txt
+Access Log - Incident 42
+03:14 - Unknown login attempt, storeroom bay 3.
+03:16 - Access denied.
+03:17 - Alert raised to on-call.
 ```
 
 ### Step A5 — Create Your Investigation Note
