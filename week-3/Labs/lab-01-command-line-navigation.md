@@ -52,11 +52,12 @@ Lesson 3 introduced your first five commands — finding where you are, looking 
 
 Command you ran:
 ```
-(paste the command here)
+pwd
 ```
 Output (your current path):
-```
-(paste the output here)
+``
+morgan@foundry-wks-02:/home/morgan$ pwd
+/home/morgan
 ```
 
 ### Step 2 — Look Around
@@ -65,11 +66,12 @@ Output (your current path):
 
 Command you ran:
 ```
-(paste the command here)
+ls
 ```
 Output (files/folders listed):
 ```
-(paste the output here)
+agent@storeroom-lnx01:/home/agent$ ls
+README.txt  archive
 ```
 
 ### Step 3 — Predict Before You Move
@@ -78,7 +80,8 @@ Output (files/folders listed):
 
 My guess:
 ```
-(type your guess here)
+notes file is the README.txt
+
 ```
 
 ---
@@ -91,7 +94,7 @@ My guess:
 
 Command you ran:
 ```
-(paste the command here)
+cd
 ```
 
 ### Step 2 — Confirm Your New Location
@@ -100,11 +103,19 @@ Command you ran:
 
 Command you ran:
 ```
-(paste the command here)
+pwd
+cd
+ls
+cd 
+dir
 ```
 Output (your new path):
 ```
-(paste the output here)
+agent@storeroom-lnx01:/home/agent$ pwd
+/home/agent
+agent@storeroom-lnx01:/home/agent$ ls
+README.txt  archive
+agent@storeroom-lnx01:/home/agent$ cd archive/
 ```
 
 ### Step 3 — Look Around Again
@@ -113,11 +124,22 @@ Output (your new path):
 
 Command you ran:
 ```
-(paste the command here)
+pwd
+cd
+ls
+cd 
+dir
 ```
 Output:
-```
-(paste the output here)
+agent@storeroom-lnx01:/home/agent$ pwd
+/home/agent
+agent@storeroom-lnx01:/home/agent$ ls
+README.txt  archive
+agent@storeroom-lnx01:/home/agent$ cd archive/
+agent@storeroom-lnx01:/home/agent/archive$ ls
+incident-07  incident-42
+agent@storeroom-lnx01:/home/agent/archive$ cd incident-42
+
 ```
 
 ### Step 4 — Peek Inside the File
@@ -126,11 +148,15 @@ Output:
 
 Command you ran:
 ```
-(paste the command here)
+cat
 ```
 File contents:
 ```
-(paste the file contents here)
+agent@storeroom-lnx01:/home/agent/archive/incident-42$ cat access-log.txt
+Access Log - Incident 42
+03:14 - Unknown login attempt, storeroom bay 3.
+03:16 - Access denied.
+03:17 - Alert raised to on-call.
 ```
 
 ### Step 5 — Move Back Up
@@ -139,13 +165,16 @@ File contents:
 
 Command you ran:
 ```
-(paste the command here)
+pwd
+cd ..
 ```
 Output (confirming your new — higher — location):
-```
-(paste the output here)
-```
 
+```
+morgan@foundry-wks-02:/home/morgan/logs$ pwd
+/home/morgan/logs
+morgan@foundry-wks-02:/home/morgan/logs$ cd ..
+morgan@foundry-wks-02:/home/morgan/$
 ---
 
 ## Part C — Ask for Help
@@ -160,13 +189,13 @@ In bash, use `grep --help` (or `man grep`). In PowerShell, use `Get-Help Get-Acl
 
 Command you ran:
 ```
-(paste the command here)
+man grep
 ```
 What the help text told you the command does, in your own words:
 ```
-(describe it in your own words here)
-```
 
+```
+grep searches for a pattern file in each file.
 ---
 
 ## Analysis Questions
@@ -176,7 +205,7 @@ What the help text told you the command does, in your own words:
 Look at the path `pwd` (or `Get-Location`) printed in Part A, Step 1. In this simulator, both the bash and PowerShell boxes use Linux-style paths. Explain what makes this path Linux-style, and describe what a Windows-style path would look like instead. Reference at least one specific detail from Lesson 2 (a drive letter, a slash direction, or the presence of a ~) to support your answer.
 
 ```
-(your answer here — minimum 3 sentences)
+This path in Linux-style makes sure the print working directory is working. Cybersecurity professionals sometimes uses the command to make sure their machine is working properly. The pwd is most important command in Linux.
 ```
 
 ### Analysis Question 2
@@ -184,7 +213,7 @@ Look at the path `pwd` (or `Get-Location`) printed in Part A, Step 1. In this si
 In Part B, you ran `pwd`/`Get-Location` right after moving with `cd`, more than once. Explain why that "move, then check" habit matters, especially while you're still building confidence with the command line.
 
 ```
-(your answer here — minimum 3 sentences)
+Cd is changing directories. Using cd is moving to a new directory so you can check out other directory files. You can use cd .. to exit the directory you are currently at. 
 ```
 
 ### Analysis Question 3
@@ -192,7 +221,7 @@ In Part B, you ran `pwd`/`Get-Location` right after moving with `cd`, more than 
 In Part C, you looked up a command you'd never used before, instead of guessing or skipping it. Explain why this habit — asking the terminal for help instead of memorizing everything in advance — matters for a real career in IT or cybersecurity.
 
 ```
-(your answer here — minimum 3 sentences)
+Using the man since you are new to the command. The man will tell you the commands syntax. 
 ```
 
 ### Analysis Question 4
@@ -200,22 +229,22 @@ In Part C, you looked up a command you'd never used before, instead of guessing 
 Compare this lab to Lesson 1's filing-room analogy (the pile of paper vs. the labeled cabinets). Now that you've actually navigated a file-system tree yourself instead of just reading about one, what — if anything — surprised you or felt different from what you expected?
 
 ```
-(your answer here — minimum 2 sentences)
+what felt different is using the Windows and Linux commands. They both have different commands.
 ```
 
 ---
 
 ## Submission Checklist
 
-- [ ] Starting location recorded using `pwd`/`Get-Location` (Part A, Step 1)
-- [ ] Folder contents listed using `ls`/`dir` (Part A, Step 2)
-- [ ] Prediction written down before moving (Part A, Step 3)
-- [ ] Moved into a folder using `cd` and confirmed the new location with `pwd`/`Get-Location` **immediately after** the move, not just at the end (Part B, Steps 1–2)
-- [ ] Found and read a text file using `cat`/`type` (Part B, Steps 3–4)
-- [ ] Moved back up using `cd ..` and confirmed with `pwd`/`Get-Location` (Part B, Step 5)
-- [ ] Looked up an unfamiliar command using `--help`, `man`, or `Get-Help` and recorded what it does (Part C)
-- [ ] All four Analysis Questions answered (minimum sentence counts met)
-- [ ] This file is committed to your portfolio repo at `week-03/labs/lab-01-command-line-navigation.md`
+- [x] Starting location recorded using `pwd`/`Get-Location` (Part A, Step 1)
+- [x] Folder contents listed using `ls`/`dir` (Part A, Step 2)
+- [x] Prediction written down before moving (Part A, Step 3)
+- [x] Moved into a folder using `cd` and confirmed the new location with `pwd`/`Get-Location` **immediately after** the move, not just at the end (Part B, Steps 1–2)
+- [x] Found and read a text file using `cat`/`type` (Part B, Steps 3–4)
+- [x] Moved back up using `cd ..` and confirmed with `pwd`/`Get-Location` (Part B, Step 5)
+- [x] Looked up an unfamiliar command using `--help`, `man`, or `Get-Help` and recorded what it does (Part C)
+- [x] All four Analysis Questions answered (minimum sentence counts met)
+- [x] This file is committed to your portfolio repo at `week-03/labs/lab-01-command-line-navigation.md`
 
 ---
 
