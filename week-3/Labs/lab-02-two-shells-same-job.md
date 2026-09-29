@@ -272,11 +272,11 @@ Fill in the exact commands you typed for each task. Do not use generic names —
 
 | Task / Question | Bash Command (Bash Pass) | PowerShell Command (PowerShell Pass) |
 |---|---|---|
-| 1. Where am I? | | |
-| 2. Look around | | |
-| 3. Move into a folder | | |
-| 4. Peek inside a file | | |
-| 5. Create + back up your note | | |
+| 1. Where am I? | pwd | Get-Location |
+| 2. Look around | ls | Get-ChildItem |
+| 3. Move into a folder | cd | Set-Location |
+| 4. Peek inside a file | cat |Get-Content |
+| 5. Create + back up your note | cp| Copy-Item|
 
 **⚠️ Stop and check:** did both passes use `/home/agent/archive/incident-42` and `access-log.txt`? If not, go back to the matching PowerShell challenge (use **Previous**) and redo it in that folder before continuing.
 
@@ -285,7 +285,7 @@ Fill in the exact commands you typed for each task. Do not use generic names —
 Describe at least one difference in how the two shells presented information to you (e.g., column layout, text colors, file details, folder headers). Minimum 2 sentences.
 
 ```
-(your answer here)
+The layout has different kernels, Linux has a $ and Powershell has a >. Both have different commands, Linux commands are very short, and Windows commands are kinda long.
 ```
 
 ---
@@ -297,7 +297,7 @@ Describe at least one difference in how the two shells presented information to 
 Both passes used equivalent practice datasets with the same Linux-style layout, even though you typed different commands. How do you know the folders and files matched? Point to concrete evidence from your terminal outputs (e.g., matching paths, folder names, or file content). Minimum 3 sentences.
 
 ```
-(your answer here)
+I know the folders and the files matched using the cat command to peak through the files and folders. I use the cd to make sure there is not a duplicate folder has the same name.
 ```
 
 ### Analysis Question 2 — Syntax Preferences
@@ -305,7 +305,7 @@ Both passes used equivalent practice datasets with the same Linux-style layout, 
 Which command pair (e.g., pwd vs. Get-Location, ls vs. dir, cat vs. type) felt most different to you? Give a specific reason why one felt more comfortable or intuitive than the other. Minimum 3 sentences.
 
 ```
-(your answer here)
+The cat command felt different to me. Cat is shorted for concatnate, Linux uses the "cat" to shorten the text concatnate. The cat command peaks through the files text.
 ```
 
 ### Analysis Question 3 — Applying Lesson 2 Differences
@@ -313,23 +313,23 @@ Which command pair (e.g., pwd vs. Get-Location, ls vs. dir, cat vs. type) felt m
 In this simulator, both boxes use the same Linux-style paths (like `/home/agent`) — PowerShell also runs on Linux, so you did not see drive letters such as `C:\`. If the simulator accepted a backslash in a path, that is a typing convenience, not a sign of a Windows file system. First, describe what you actually observed that was different between the bash and PowerShell commands or output. Then explain one Windows-vs-Linux difference from Lesson 2 (such as slash styles, case-sensitivity, or drive letters) and what it would look like on a real Windows computer. Minimum 3 sentences.
 
 ```
-(your answer here)
+Bash uses case-sensitive commands, and PowerShell uses case-insensitive commands. Linux uses two- or three-letter commands, and Windows PowerShell uses words. PowerShell, you don't need to use an operating system; you need to use Windows software. In Linux you need to use an operating system; it's free to build one. 
 ```
 
 ---
 
 ## Submission Checklist
 
-- [ ] Part A completed entirely in bash (Steps A1–A6, all commands and output recorded)
-- [ ] Location re-checked immediately after the Part A move (Step A3), not just at the end
-- [ ] Investigation note created and backed up in Part A (Steps A5–A6)
-- [ ] Part B completed entirely in PowerShell, on the same folder/file as Part A (Steps B1–B6)
-- [ ] Location re-checked immediately after the Part B move (Step B3)
-- [ ] Investigation note created and backed up in Part B, with the same filenames as Part A (Steps B5–B6)
-- [ ] Comparison table filled in with actual commands, not placeholders (Part C, Step C1)
-- [ ] Output-differences reflection written (Part C, Step C2 — minimum 2 sentences)
-- [ ] All three Analysis Questions answered (minimum sentence counts met)
-- [ ] This file is committed to your portfolio repo at `week-03/labs/lab-02-two-shells-same-job.md`
+- [x] Part A completed entirely in bash (Steps A1–A6, all commands and output recorded)
+- [x] Location re-checked immediately after the Part A move (Step A3), not just at the end
+- [x] Investigation note created and backed up in Part A (Steps A5–A6)
+- [x] Part B completed entirely in PowerShell, on the same folder/file as Part A (Steps B1–B6)
+- [x] Location re-checked immediately after the Part B move (Step B3)
+- [x] Investigation note created and backed up in Part B, with the same filenames as Part A (Steps B5–B6)
+- [x] Comparison table filled in with actual commands, not placeholders (Part C, Step C1)
+-  x] Output-differences reflection written (Part C, Step C2 — minimum 2 sentences)
+- [x] All three Analysis Questions answered (minimum sentence counts met)
+- [x] This file is committed to your portfolio repo at `week-03/labs/lab-02-two-shells-same-job.md`
 
 ---
 
