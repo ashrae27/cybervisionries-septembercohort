@@ -139,7 +139,8 @@ Access Log - Incident 42
 
 Command you ran:
 ```
-(paste the command here)
+touch 
+
 ```
 
 ### Step A6 — Back Up Your Note
@@ -148,12 +149,12 @@ Command you ran:
 
 Command you ran:
 ```
-(paste the command here)
+cp
 ```
 
 Confirm both files now exist:
 ```
-(paste the output here)
+cp investigation-notes.txt investigation-notes-backup.txt
 ```
 
 ---
@@ -168,11 +169,12 @@ Now use the **Foundry District Storeroom — PowerShell** box. It has its own eq
 
 Command you ran:
 ```
-(paste the command here)
+Get-Location
 ```
 Output:
 ```
-(paste the output here)
+PS /home/morgan> Get-Location
+/home/morgan
 ```
 
 ### Step B2 — Look Around the Directory
@@ -181,11 +183,14 @@ Output:
 
 Command you ran:
 ```
-(paste the command here)
+Get-ChildItem
 ```
 Output:
 ```
-(paste the output here)
+PS /home/agent> Get-ChildItem
+Mode                 Name
+d-----               archive
+-a----               README.txt
 ```
 
 ### Step B3 — Move Deeper into the Storeroom
@@ -194,18 +199,24 @@ Output:
 
 Command you ran:
 ```
-(paste the command here)
+Set-Location archive
+Set-Location incident-42
 ```
 
 **⚠️ Stop and check:** run your location-check command *immediately* after moving, to confirm you arrived safely.
 
 Command you ran:
 ```
-(paste the command here)
+Set-Location archive
+Set-Location incident-42
 ```
 Output:
 ```
-(paste the output here)
+PS /home/agent> ls
+Mode                 Name
+d-----               archive
+-a----               README.txt
+PS /home/agent> Set-Location archive/
 ```
 
 ### Step B4 — Inspect the Incident Log File
@@ -214,11 +225,14 @@ Output:
 
 Command you ran:
 ```
-(paste the command here)
-```
+Get-Content 
 Output:
 ```
-(paste the output here)
+PS /home/agent/archive/incident-42> Get-Content access-log.txt
+Access Log - Incident 42
+03:14 - Unknown login attempt, storeroom bay 3.
+03:16 - Access denied.
+03:17 - Alert raised to on-call.
 ```
 
 ### Step B5 — Create Your Investigation Note
@@ -227,7 +241,7 @@ Output:
 
 Command you ran:
 ```
-(paste the command here)
+New-Item investigation-notes.txt
 ```
 
 ### Step B6 — Back Up Your Note
@@ -236,12 +250,16 @@ Command you ran:
 
 Command you ran:
 ```
-(paste the command here)
+Copy-Item Investigation-notes.txt Investigation-notes-backup.txt
 ```
 
 Confirm both files now exist:
 ```
-(paste the output here)
+PS /home/agent/archive/incident-42> Copy-Item investigation-notes.txt investigation-notes-backup.txt
+PS /home/agent/archive/incident-42> ls
+Mode                 Name
+-a----               access-log.txt
+-a----               investigation-notes-backup.txt
 ```
 
 ---
