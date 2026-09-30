@@ -2,7 +2,7 @@
 
 **Student Name:** Ashley Raether
 
-**Date Completed:**
+**Date Completed:** 9/29/2026
 
 Summarize this week's key concepts in your own words — not copy-pasted definitions.
 
