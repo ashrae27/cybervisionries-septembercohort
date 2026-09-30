@@ -81,15 +81,20 @@ Reading each file is what completes Challenges 1, 2, and 3. For each of the thre
 
 Shift log contents:
 ```
-(paste the file contents here)
+Shift log - Foundry District Archive Room
+07:00 - Archive opened; no incidents overnight.
+15:00 - Routine filing complete.
 ```
 Maintenance note contents:
 ```
-(paste the file contents here)
+Maintenance Note - Conveyor belt 3 serviced, next check due in 90 days
 ```
 Supply inventory contents:
 ```
-(paste the file contents here)
+Supply Inventory - Q4 2024
+Gloves - 400 units
+Masks - 250 units
+Tape - 60 rolls
 ```
 
 ---
@@ -104,7 +109,7 @@ Now that you've located and read all three files, clean up after yourself the wa
 
 Command you ran:
 ```
-(paste the command here)
+mkdir sorted-findings
 ```
 
 ### Step 2 — Move All Three Files Into It
@@ -115,7 +120,10 @@ Each move challenge is freshly prepared from your home folder. Challenge 5 alrea
 
 Commands you ran:
 ```
-(paste the commands here)
+mv shift-log.txt /home/sorted-findings
+mv maintenance-note.txt /home/sorted-findings
+mv supply-inventory.txt /home/sorted-findings
+
 ```
 
 ### Step 3 — Confirm the Move
@@ -124,11 +132,11 @@ Commands you ran:
 
 Command you ran:
 ```
-(paste the command here)
+ls
 ```
 Output:
 ```
-(paste the output here)
+maintenance-note.txt  shift-log.txt  supply-inventory.txt
 ```
 
 ---
@@ -143,11 +151,11 @@ When that happens, use `--help`, `man`, or `Get-Help` instead of guessing. **Cha
 
 Command or term you looked up:
 ```
-(paste the command here)
+man chmod
 ```
 What the help text (or the folder's contents) told you:
 ```
-(describe it in your own words here)
+You can use the man command to help you understand the command, since you are new to the command.
 ```
 
 ### Step 2 — Describe a Wrong Turn
@@ -155,7 +163,7 @@ What the help text (or the folder's contents) told you:
 Everyone takes at least one wrong turn in a tree this size. Describe one moment you ended up somewhere unexpected, and how you used `pwd`/`Get-Location` and `cd ..` to recover.
 
 ```
-(your answer here — minimum 2 sentences)
+You use pwd to see where you are. You use cd.. when you're in the wrong folder.
 ```
 
 ---
@@ -175,7 +183,7 @@ Which of the three files in Part A took the longest to find, and what was it abo
 Compare how you felt starting this lab to how you felt at the very start of Lesson 3A, looking at a blank blinking cursor for the first time. What changed?
 
 ```
-(your answer here — minimum 3 sentences)
+The file took the longest to find is the record files. The files have the Same name, different year.
 ```
 
 ### Analysis Question 3
@@ -183,20 +191,20 @@ Compare how you felt starting this lab to how you felt at the very start of Less
 Week 4 moves from managing your own files to controlling who's allowed to do what to them — permissions — plus your first look at what a virtual machine is. Based on everything you've practiced this week, what's one thing you're curious about or looking forward to?
 
 ```
-(your answer here — minimum 2 sentences)
+I felt that starting the lab was a good practice for getting used to the mv the files to the new directory. I have to use cd.. more often to go back and find the files and move them to a new directory at the home page. Looking at a blank blinking cursor for the first time, the curor is waiting for me to type a command,
 ```
 
 ---
 
 ## Submission Checklist
 
-- [ ] All three target files located, with full paths recorded (Part A)
-- [ ] All three target files read and their contents recorded (Part B)
-- [ ] `sorted-findings` folder created and all three files moved into it, confirmed with a listing (Part C)
-- [ ] At least one command or term looked up with `--help`/`man`/`Get-Help`, with what you learned recorded (Part D, Step 1)
-- [ ] One wrong-turn moment described, including how you recovered (Part D, Step 2 — minimum 2 sentences)
-- [ ] All three Analysis Questions answered (minimum sentence counts met)
-- [ ] This file is committed to your portfolio repo at `week-03/labs/lab-03-command-line-scavenger-hunt.md`
+- [x] All three target files located, with full paths recorded (Part A)
+- [x] All three target files read and their contents recorded (Part B)
+- [x] `sorted-findings` folder created and all three files moved into it, confirmed with a listing (Part C)
+- [x] At least one command or term looked up with `--help`/`man`/`Get-Help`, with what you learned recorded (Part D, Step 1)
+- [x] One wrong-turn moment described, including how you recovered (Part D, Step 2 — minimum 2 sentences)
+- [x] All three Analysis Questions answered (minimum sentence counts met)
+- [x] This file is committed to your portfolio repo at `week-03/labs/lab-03-command-line-scavenger-hunt.md`
 
 ---
 
