@@ -2,7 +2,7 @@
 
 **Student Name:** Ashley Raether
 
-**Date Completed:**
+**Date Completed:** 10/8/2026
 
 **Module:** 1 — Digital Infrastructure & CLI | **Week:** 4  
 **Submission Path:** `week-04/labs/lab-03-vm-builder.md`
@@ -277,6 +277,10 @@ This lab completes **Deliverable 1: VM concepts + CLI screenshots**. Two things 
 | VM dashboard, running + snapshot | Lab 03, Part C | `vm-dashboard-running.png` |
 
 For each: on GitHub.com, navigate to `assets/screenshots/week-04/`, click **Add file → Upload files**, drag the image in (exact filenames above — lowercase, hyphens, no spaces), and **Commit changes**. Then open each uploaded image, right-click directly on it, choose **Copy image address** (Chrome/Edge) or **Copy Image Link** (Firefox), and paste the two VM links into the embeds below:
+
+![VM configuration summary](https://private-user-images.githubusercontent.com/88813019/671853390-29f26ed0-1511-4ce0-868c-7d6b72114771.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3OTE4NTgxMzAsIm5iZiI6MTc5MTg1NzgzMCwicGF0aCI6Ii84ODgxMzAxOS82NzE4NTMzOTAtMjlmMjZlZDAtMTUxMS00Y2UwLTg2OGMtN2Q2YjcyMTE0NzcxLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNjEwMTMlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjYxMDEzVDAyMTcxMFomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPWYwMGRkMzgzZDIyOGI4MTYzMGU2ZmY1NTRhMDFiYjY1ZWZhNGNjNDc2NjAwMTdkMzgyN2Y0MzUwNTk5YjZkNDYmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JnJlc3BvbnNlLWNvbnRlbnQtdHlwZT1pbWFnZSUyRnBuZyJ9.Up0DpE5Pjzezn-bpfrjIb2khZEs6jeGOBPRQvO34fwA)
+
+![VM dashboard — running, with snapshot](https://private-user-images.githubusercontent.com/88813019/671856084-9ed9502c-83a8-4ad5-a343-92617275c465.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3OTE4NTgzNzMsIm5iZiI6MTc5MTg1ODA3MywicGF0aCI6Ii84ODgxMzAxOS82NzE4NTYwODQtOWVkOTUwMmMtODNhOC00YWQ1LWEzNDMtOTI2MTcyNzVjNDY1LnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNjEwMTMlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjYxMDEzVDAyMjExM1omWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTkyNmU0ODg0ZmNhODJjNGE3ZmYxOWQwZDQzNTA0NTU5MGZjYjIyMWU3YTI4YjU4YTZhMmU0OTIyODA1Nzk3OTQmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JnJlc3BvbnNlLWNvbnRlbnQtdHlwZT1pbWFnZSUyRnBuZyJ9.-7pbpqrwc4M2fL61CEAI7kLEo0oU-fFZHesxmR0WBa8)
 
 **If right-click doesn't show that option:** click the small download-arrow icon in the top-right of the image preview instead, then copy the URL from your browser's address bar.
 
