@@ -63,8 +63,8 @@ Without changing the Lab 03 rule, predict the result from each test source.
 
 | Source | Prediction | Deciding rule/reason |
 | --- | --- | --- |
-| Grid Beacon `10.60.6.4` | The listener received a respond back from the Grid Beacon | Rule is allow. |
-| Other Test Source `10.60.6.10` | The listener won't get a respond back from other test source. | Rule is deny. |
+| Grid Beacon `10.60.6.4` | The listener received a respond back from the Grid Beacon | Rule is allow. The reason is the Grid Beacon is a buildings IP address. |
+| Other Test Source `10.60.6.10` | The listener won't get a respond back from other test source. | Rule is deny. The reason is the IP address is for testing. |
 
 ## Guided Steps
 
@@ -85,8 +85,7 @@ The verdict is "GET / HTTP/1.1" 200; the listener received the Grid Beacon sourc
 Wait at least 10 seconds. Select **Other Test Source (10.60.6.10)** and run the same fixed TCP 8080 test.
 
 ```text
-10.60.6.10 - - [30/Oct/2026 17:51:24] "GET / HTTP/1.1" 200 -. The listener received the other test source rule. It allows the listener to receive the other test source message while using the TCP protocol. 
-
+No response from the Other Test Source from the Python Listener. The Other Test Source is denied.
 ```
 
 Expected verdict: `DENIED`, produced by the protected fallback (1000 on legacy rooms; 4096 on newer rooms).
@@ -108,8 +107,8 @@ Your evidence pair should now prove:
 | --- | --- |
 | Is the service listening? | Yes, the service is listening. |
 | Is Grid Beacon allowed? | Yes, the Grid Beacon is allowed |
-| Is Other Test Source denied? | No, the other test source is not denied |
-| Which rule produces the intended Allow? | Rule are allowed are  allow-ssh-from-bastion, allow-icmp-intra-vnet, Grid Beacon, and other test source. |
+| Is Other Test Source denied? | Yes, the Other Test Source is denied. |
+| Which rule produces the intended Allow? | The Grid Beacon is allowed. |
 
 ## Capture Evidence
 
@@ -119,15 +118,14 @@ Capture the final rule plus both result cards. Screenshots must show the selecte
 
 ![Grid Beacon ALLOWED result — week07-lab04-grid-beacon-allowed.png](https://raw.githubusercontent.com/ashrae27/cybervisionries-septembercohort/refs/heads/main/assets/screenshots/week07-lab04-grid-beacon-allowed.png)
 
-![Other Test Source DENIED result — week07-lab04-other-source-denied.png](https://raw.githubusercontent.com/ashrae27/cybervisionries-septembercohort/refs/heads/main/assets/screenshots/week07-lab04-other-source-denied.png)
+![Other Test Source DENIED result — week07-lab04-other-source-denied.png](https://raw.githubusercontent.com/ashrae27/cybervisionries-septembercohort/refs/heads/main/assets/screenshots/lab04-other-source-denied.png)
 
 ## Explain — Deliverable 2 Statement
 
 Write a concise professional statement covering what you configured, the source/port scope, the two tests, and how the results prove least privilege.
 
 ```text
-Both of the tests use the TCP handshake protocol to communicate the Azure Bastion VM. The tests I run is the Grid Beacon and the other test source by adding the rules to the evaluation order list. I typed the corrected information for the Grid Beacon. I log in into my Azure Bastion machine and run the Python listener first. I test the beacon first and finally I test the other test source. The Azure Bastion got a response back from both rules.
-
+Both of the tests use the TCP handshake protocol to communicate the Azure Bastion VM. The tests I run is the Grid Beacon and the other test source by adding the rules to the evaluation order list. I typed the corrected information for the Grid Beacon. I log in into my Azure Bastion machine and run the Python listener first. I test the beacon first and finally I test the other test source. The Azure Bastion got a response back only the Grid Beacon rule, not the Other Test Source. The Other Test Source is denied.
 ```
 
 ## Required Evidence
@@ -182,7 +180,7 @@ The evidence distinguishes configuration from observed enforcement arrange the p
 
 - [x] No password, Bastion URL, or browser address bar appears in my files.
 
-- [ ] This worksheet is committed to `week-07/labs/lab-04-prove-the-guard-works.md`.
+- [x] This worksheet is committed to `week-07/labs/lab-04-prove-the-guard-works.md`.
 
 ## GitHub / Lab Portal Submission
 
