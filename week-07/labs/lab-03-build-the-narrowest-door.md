@@ -2,7 +2,7 @@
 
 **Student Name:** Ashley Raether
 
-**Date Completed:** 10/29/2026
+**Date Completed:** 10/30/2026
 
 **Module:** 2 — Networking & Cloud Foundations | **Week:** 7  
 **Submission Path:** `week-07/labs/lab-03-build-the-narrowest-door.md`
