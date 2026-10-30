@@ -110,7 +110,7 @@ This is a read-only lab: do not add, edit, or delete any rule. Your test is visu
 
 Capture the detailed **INBOUND — EVALUATION ORDER** view showing your actual protected baseline (four legacy rules or three newer rules) and no student rule. If it does not fit in one image, use two clearly named images and explain why.
 
-![Security rules baseline — week07-lab01-security-rules-baseline.png](https://raw.githubusercontent.com/ashrae27/cybervisionries-septembercohort/refs/heads/main/assets/screenshots/week07-lab01-security-rules-baseline.png)
+![Security rules baseline — week07-lab01-security-rules-baseline.png](https://raw.githubusercontent.com/ashrae27/cybervisionries-septembercohort/refs/heads/main/assets/screenshots/lab01-security-rules-baseline.png)
 
 ## Explain
 
