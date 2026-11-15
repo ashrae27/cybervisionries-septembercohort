@@ -956,7 +956,7 @@ Connected destination: 0.0.0.0:*
 Expected identity for the passing test: CyberFoundations Lab
 SNI value: CN = localhost
 CA file used: === TLS BASELINE (expected pass) ===
-Negotiated TLS version and cipher from the passing output: TLS_AES_256_GCM_SHA384
+Negotiated TLS version and cipher from the passing output: Version: TLS v1.3, Cipher: TLS_AES_256_GCM_SHA384
 Passing verification message and exit status: Exit status: 0
 Failing verification message and exit status: Exit status: 1
 What changed between the two tests: The TLS passing test has the correct information for signing the digital certificate. The failing TLS test does not have the credentials for the certfticate.
