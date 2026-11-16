@@ -960,7 +960,7 @@ Negotiated TLS version and cipher from the passing output: Version: TLS v1.3
  Cipher: TLS_AES_256_GCM_SHA384
 Passing verification message and exit status: Exit status: 0
 Failing verification message and exit status: Exit status: 1
-What changed between the two tests: The TLS passing test has the correct information for signing the digital certificate. The failing TLS test does not have the credentials for the certfticate.
+What changed between the two tests: The TLS passing test has the correct information for signing the digital certificate. The failing TLS test does not have the credentials for the cerfitcate.
 Explain each job: the certificate links a name to a public key; the handshake checks use of the matching private key; newly arranged traffic keys protect messages. How are these different? The public key can only encrypt the certificate, the private key can decrypt the certificate.  The VM is using asymmetric encryption.  Terminal A uses the listener by starting communicating with terminal B.
 ```
 
@@ -1235,7 +1235,7 @@ Before a new Submit to GitHub or resubmit attempt runs, the portal checks the te
 Write 5–7 sentences telling the story of what you did. Start with “First I made…”, then describe the badge application, the issuing office’s signature, your inspection, your file checks, and the live connection. Say which office you told the client to accept. Include one wrong-input test, why it failed, and what you kept the same.
 
 ```text
-First, I made a new directory on the VM called Week 9 digital trust. I typed the command cd to the directory, Week 9 digital trust, and added more directories, ca requests, and certificate verifications on the practice directory. I tested the first digital certificate in the practice directory; the first certificate passed by having the correct information showing who owns the certificate. The other two certificates I tested failed because both of the certificates were modified and the failed certificates have the same name as the passing certificates. The passing certificate pass.txt is the original, the two failed certificates wrong.txt and wrong CA.txt are copied and modified. After testing the certificates, I opened up two different VM machines, Terminal A and Terminal B and used the TCP handshake with the listener on Terminal A. Terminal A listener starts listening and Terminal B uses the IP address 127.0.0.1 and port 8443 by communicating to terminal A. Terminal B results are the same as the passing certificate, the information is the same as the certificate. 
+First, I made a new directory on the VM called Week 9 digital trust. I typed the command cd to the directory, Week 9 digital trust, and added more directories, ca requests, and certificate verifications on the practice directory. I tested the first digital certificate in the practice directory; the first certificate passed by having the correct information showing who owns the certificate. The other two certificates I tested failed because both of the certificates were modified and the failed certificates have the same name as the passing certificates. The passing certificate pass.txt is the original, the two failed certificates wrong.txt and wrong-CA.txt are copied and modified. After testing the certificates, I opened up two different VM machines, Terminal A and Terminal B and used the TCP handshake with the listener on Terminal A. Terminal A listener starts listening and Terminal B uses the IP address 127.0.0.1 and port 8443 by communicating to terminal A. Terminal B results are the same as the passing certificate, the information is the same as the certificate. 
 ```
 
 ## Required Evidence
@@ -1320,7 +1320,7 @@ The office signs the visitor's badge application to add the visitor's informatio
 **Analysis Question 2.** You kept the same certificate but changed the name or office used for the check. Why did the answer change? Use the messages from both wrong-input tests. Write at least 3 sentences.
 
 ```text
-The answer changed because the name and the information of the wrong name.txt and wrong CA.txt certificate changed. The original certificate, which is the pass.txt, signed by the Cyber Foundations Labs office and it can not be copied and modified. The two certificates, wrong name.txt and wrong CA.txt failed because the information both these certificates are modified and copied.
+The answer changed because the name and the information of the wrong name.txt and wrong-CA.txt certificate changed. The original certificate, which is the pass.txt, signed by the Cyber Foundations Labs office and it can not be copied and modified. The two certificates, wrong name.txt and wrong CA.txt failed because the information both these certificates are modified and copied.
 ```
 
 **Analysis Question 3.** Explain the difference between a server waiting at a door, a badge passing its checks, and messages traveling through a protected connection. If you see “connection refused,” what would you check first, and why? Write at least 3 sentences.
