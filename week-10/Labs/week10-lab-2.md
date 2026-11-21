@@ -16,7 +16,7 @@ Study mode: Guided (hints available)
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | SC-01 | Appointment scheduling account | 1 | The attacker is trying to access the Cloud Heights system by sending the employees a phishing email. | 1 | The cost of Updating the Cloud Heights software and email system is expensive. | 1 | Low (1–2) |
 | SC-02 | Patient records application | 2 | An unauthorized person will open the desk's unlocked drawer, find the password written on the card, and access the patient's records. | 2 | The patient's records will be destroyed. | 4 | Medium (3–4) |
-| SC-03 | Staff laptops | 1 | The workplace door is open and unlocked, and an unauthorized person can enter the room and  access to the patient's records. | 2 | The patients records will be damaged and tampered. | 2 | Low (1–2) |
+| SC-03 | Staff laptops | 1 | The workplace door is open and unlocked, and an unauthorized person can enter the room and access to the patient's records. | 2 | The patients records will be damaged and tampered. | 2 | Low (1–2) |
 | SC-04 | Public information website | 3 | The employees can not compare the fraud and the legitimate certificate. | 3 | The employees and the patient's  credentials will be stolen from the attacker. | 9 | High (6–9) |
 | SC-05 | Backup archive | 1 | The backup room door is opened and unlocked, and an unauthorized person enters the room, accessing the patient's record and the backup drive. | 2 | The employee's and patients data will be modified, lost, damaged or tampered. | 2 | Low (1–2) |
 
